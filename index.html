@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideas</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/assets/img/logo-suitmedia.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#ideas" class="active">Ideas</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="parallax">
+            <div class="banner-text">
+                <h1>Ideas</h1>
+                <p>Where all our great things begin</p>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="post-list-header">
+                <span id="post-range-text">Showing 1 - 10 of 100</span>
+                <div class="dropdowns">
+                    <div class="dropdown-group">
+                        <label for="show-per-page">Show per page:</label>
+                        <select id="show-per-page" onchange="updatePagination()">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-group">
+                        <label for="sort-by">Sort by:</label>
+                        <select id="sort-by" onchange="updatePagination()">
+                            <option value="newest">Newest</option>
+                            <option value="oldest">Oldest</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div id="post-list" class="post-list">
+                <!-- Posts will be dynamically inserted here -->
+            </div>
+
+            <div class="pagination" id="pagination-buttons">
+                
+            </div>
+        </section>
+    </main>
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
